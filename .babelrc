@@ -13,7 +13,6 @@
   ],
   "plugins": [
     "@babel/proposal-class-properties",
-    "@babel/syntax-dynamic-import",
     "transform-object-rest-spread"
   ]
 }
