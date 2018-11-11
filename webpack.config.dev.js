@@ -3,18 +3,6 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const HotModuleReplacementPlugin = require("html-webpack-plugin");
 // or put --hot flag in the script
-// has a problem with NoErrorsPlugin
-// const NoErrorsPlugin = require("");
-// related to eslint webpack plugin
-
-// cant use import ??? even with babel polyfill?
-// import path from "path";
-// import webpack from "webpack";
-// import HtmlWebpackPlugin from "html-webpack-plugin";
-
-// changed css loaders to sass but need stylus loader
-
-// could this be export default {...}
 module.exports = {
   devtool: "source-map",
   entry: ["webpack-hot-middleware/client", "./client/instagram_clone"],
@@ -32,7 +20,6 @@ module.exports = {
   ],
   module: {
     rules: [
-      // js
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -52,7 +39,6 @@ module.exports = {
         ],
         include: path.join(__dirname, "client")
       },
-      // CSS
       {
         test: /\.styl$/,
         exclude: /node_modules/,

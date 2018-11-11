@@ -27,7 +27,6 @@
     "babel-plugin-react-transform": "^3.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-display-name": "^6.25.0",
-    "babel-polyfill": "^6.26.0",
     "css-loader": "^1.0.1",
     "eslint": "^5.9.0",
     "eslint-plugin-babel": "^5.2.1",
